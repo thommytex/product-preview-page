@@ -1,0 +1,84 @@
+body{
+    font-family: Fraunces;
+}
+.card{
+    border-radius: 12px;
+}
+#d-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+#m-img{
+    display: none;
+}
+.btn{
+    background-color:  hsl(158, 36%, 37%);
+    color: white;
+}
+h5{
+    font-family: 'montserrat', serif;
+
+}
+h3{
+    color:hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.btn:hover{
+    color: white;
+}
+.price{
+    display: flex;
+     gap: 4px;
+    grid-template-columns: repeat(2,1fr);
+}
+.price h1{
+    color: hsl(158, 36%, 37%);
+    font-family: 'fraunces', sans-serif;
+    font-weight: 700;
+}
+.right{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+del{
+    margin-top:3%;
+}
+
+#cart{
+    width: 0.9rem;
+    margin-right: 0.5rem;
+}
+h5,text,del{
+    color: hsl(228, 12%, 48%);
+}
+
+/* MEDIA QUARY */
+
+@media (max-width:920px){
+    .right{
+        padding: 1.5rem;
+    }
+  
+}
+@media(max-width:750px){
+    #d-img{
+        display: none;
+    }
+    #m-img{
+        border-radius: 12px 12px 0 0;
+        width: 100%;
+        display: block;
+    }
+}
+@media(max-width:300px){
+    .right{
+        padding: 1rem;
+    }
+    .price{
+        gap: 0;
+    }
+}
